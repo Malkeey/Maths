@@ -6,11 +6,17 @@
 
 package Geometry;
 
+import java.text.DecimalFormat;
+
 public class Shape2D {
 
     private float height, width, circumference;
     
     //Constructors
+    public Shape2D() {
+        
+    }
+    
     public Shape2D(float height, float width) {
         this.height = height;
         this.width = width;
