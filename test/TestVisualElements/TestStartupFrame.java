@@ -1,10 +1,12 @@
-/**
+/*
  *
  * @author Daniel Karlsson 2016
  *
  */
 
 package TestVisualElements;
+
+import VisualElements.StartupFrame;
 
 import org.junit.Test;
 

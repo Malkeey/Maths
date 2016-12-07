@@ -1,4 +1,4 @@
-/**
+/*
  *
  * @author Daniel Karlsson 2016
  *
@@ -50,11 +50,20 @@ public class StartupFrame {
         geometryButton.setHorizontalTextPosition(SwingConstants.CENTER);
         geometryButton.setMnemonic(KeyEvent.VK_G);
         
+        JButton equationButton = new JButton("Equations", equationButtonIcon);
+        equationButton.setVerticalTextPosition(SwingConstants.BOTTOM);
+        equationButton.setHorizontalTextPosition(SwingConstants.CENTER);
+        equationButton.setMnemonic(KeyEvent.VK_E);
+        
         mainPanel.add(calculatorButton);
         mainPanel.add(converterButton);
         mainPanel.add(geometryButton);
         mainPanel.add(equationButton);
         
+    }
+    
+    public JFrame getStartupFrame() {
+        return mainFrame;
     }
 
 }
