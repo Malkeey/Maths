@@ -10,7 +10,7 @@ import java.text.DecimalFormat;
 
 public class Shape3D {
 
-    private float height, width, surfaceArea;
+    protected float height, width, surfaceArea, volume;
     
     //Constructors
     public Shape3D() {
@@ -31,6 +31,14 @@ public class Shape3D {
     
     public float getWidth() {
         return width;
+    }
+    
+    public float getSurfaceArea() {
+        return surfaceArea;
+    }
+    
+    public float getVolume() {
+        return volume;
     }
 
 }
