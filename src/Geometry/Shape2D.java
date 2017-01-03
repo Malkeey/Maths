@@ -6,24 +6,47 @@
 
 package Geometry;
 
-import java.text.DecimalFormat;
+//import java.text.DecimalFormat;
 
-public abstract class Shape2D {
+public abstract class Shape2D implements Shape2DInterface {
 
-    public double height = 0, width = 0, circumference = 0, area = 0;
+    protected double height, width, circumference, area;
     
     //Methods
-    public void calculateCircumference();
-    
-    public void calculateArea();
+    @Override
+    public void calculateValues() {
+        
+    }
     
     //Getters
-    public double getHeight();
+    @Override
+    public double getHeight() {
+        return height;
+    }
     
-    public double getWidht();
+    @Override
+    public double getWidth() {
+        return width;
+    }
     
-    public double getCircumference();
+    @Override
+    public double getArea() {
+        return area;
+    }
     
-    public double getArea();
-
+    @Override
+    public double getCircumference() {
+        return circumference;
+    }
+    
+    //Setters
+    @Override
+    public void setHeight(double newHeight) {
+        height = newHeight;
+    }
+    
+    public void setWidth(double newWidth) {
+        width = newWidth;
+    }
+    
 }

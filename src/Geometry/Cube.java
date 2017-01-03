@@ -15,7 +15,7 @@ public class Cube extends Shape3D {
     public Cube(double edgeLength) {
         this.height = edgeLength;
         this.width = edgeLength;
-        this.depth = edgeLength;
+        this.length = edgeLength;
     }
     
     //Methods

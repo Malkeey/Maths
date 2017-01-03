@@ -8,7 +8,7 @@ package Geometry;
 
 //import java.text.DecimalFormat;
 
-public interface Shape3DInterface {
+public interface Shape2DInterface {
     
     //Methods
     public void calculateValues();
@@ -18,17 +18,13 @@ public interface Shape3DInterface {
     
     public double getWidth();
     
-    public double getLength();
+    public double getArea();
     
-    public double getSurfaceArea();
-    
-    public double getVolume();
+    public double getCircumference();
     
     //Setters
     public void setHeight(double newHeight);
     
     public void setWidth(double newWidth);
-    
-    public void setDepth(double newWidth);
     
 }

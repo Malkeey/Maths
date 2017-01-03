@@ -6,11 +6,11 @@
 
 package Geometry;
 
-import java.text.DecimalFormat;
+//import java.text.DecimalFormat;
 
 public abstract class Shape3D implements Shape3DInterface {
 
-    protected double height, width, depth, surfaceArea, volume;
+    protected double height, width, length, surfaceArea, volume;
     
     //Methods
     @Override
@@ -30,8 +30,8 @@ public abstract class Shape3D implements Shape3DInterface {
     }
     
     @Override
-    public double getDepth() {
-        return depth;
+    public double getLength() {
+        return length;
     }
     
     @Override
@@ -42,6 +42,22 @@ public abstract class Shape3D implements Shape3DInterface {
     @Override
     public double getVolume() {
         return volume;
+    }
+    
+    //Setters
+    @Override
+    public void setHeight(double newHeight) {
+        height = newHeight;
+    }
+    
+    @Override
+    public void setWidth(double newWidth) {
+        width = newWidth;
+    }
+    
+    @Override
+    public void setDepth(double newDepth) {
+        length = newDepth;
     }
 
 }

@@ -8,11 +8,32 @@ package Geometry;
 
 //import java.text.DecimalFormat;
 
-public class RectangularCuboid implements Shape3D {
-
-    //If the dimensions of a rectangular cuboid are a, b and c, then its volume is abc and its surface area is 2ab + 2ac + 2bc.
+public class RectangularCuboid extends Shape3D {
     
-    //By Euler's formula the numbers of faces F, of vertices V, and of edges E of any convex polyhedron are related by the formula
-    //F + V = E + 2. In the case of a cuboid this gives 6 + 8  = 12 + 2; that is, like a cube, a cuboid has 6 faces, 8 vertices, and 12 edges.
-
+   private double spaceDiagonal, perimeter;
+   
+   public RectangularCuboid(double height, double width, double length) {
+       this.height = height;
+       this.width = width;
+       this.length = length;
+   }
+   
+   //Methods
+   @Override
+   public void calculateValues() {
+       this.surfaceArea = ((2 * length * width) + (2 * height * length) + (2 * height * width));
+       this.volume = (length * width * height);
+       spaceDiagonal = Math.sqrt((Math.pow(length, 2) + Math.pow(width, 2) + Math.pow(height, 2)));
+       perimeter = ((2 * length) + (2 * width));
+   }
+   
+   //Getters
+   public double getSpaceDiagonal() {
+       return spaceDiagonal;
+   }
+   
+   public double getPerimeter() {
+       return perimeter;
+   }
+   
 }
