@@ -8,40 +8,39 @@ package Geometry;
 
 import java.text.DecimalFormat;
 
-public abstract class Shape3D {
+public abstract class Shape3D implements Shape3DInterface {
 
-    protected float height, width, depth, surfaceArea, volume;
+    protected double height, width, depth, surfaceArea, volume;
     
-    //Constructors
-    public Shape3D() {
+    //Methods
+    @Override
+    public void calculateValues() {
         
     }
     
-    public Shape3D(float height, float width) {
-        this.height = height;
-        this.width = width;
-    }
-    
-    //Methods
-    
     //Getters
-    public float getHeight() {
+    @Override
+    public double getHeight() {
         return height;
     }
     
-    public float getWidth() {
+    @Override
+    public double getWidth() {
         return width;
     }
     
-    public float getDepth() {
+    @Override
+    public double getDepth() {
         return depth;
     }
     
-    public float getSurfaceArea() {
+    @Override
+    public double getSurfaceArea() {
         return surfaceArea;
     }
     
-    public float getVolume() {
+    @Override
+    public double getVolume() {
         return volume;
     }
 

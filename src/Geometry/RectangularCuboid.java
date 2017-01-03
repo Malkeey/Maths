@@ -8,7 +8,7 @@ package Geometry;
 
 //import java.text.DecimalFormat;
 
-public class RectangularCuboid extends Shape3D {
+public class RectangularCuboid implements Shape3D {
 
     //If the dimensions of a rectangular cuboid are a, b and c, then its volume is abc and its surface area is 2ab + 2ac + 2bc.
     

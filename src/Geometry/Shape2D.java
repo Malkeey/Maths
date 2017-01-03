@@ -8,40 +8,22 @@ package Geometry;
 
 import java.text.DecimalFormat;
 
-public class Shape2D {
+public abstract class Shape2D {
 
-    private float height, width, circumference;
-    
-    //Constructors
-    public Shape2D() {
-        
-    }
-    
-    public Shape2D(float height, float width) {
-        this.height = height;
-        this.width = width;
-    }
-    
-    public Shape2D(float circumference) {
-        this.circumference = circumference;
-    }
+    public double height = 0, width = 0, circumference = 0, area = 0;
     
     //Methods
-    public void calculateCircumference() {
-        this.circumference = (this.height * this.width);
-    }
+    public void calculateCircumference();
+    
+    public void calculateArea();
     
     //Getters
-    public float getHeight()  {
-        return height;
-    }
+    public double getHeight();
     
-    public float getWidht() {
-        return width;
-    }
+    public double getWidht();
     
-    public float getCircumference() {
-        return circumference;
-    }
+    public double getCircumference();
+    
+    public double getArea();
 
 }
