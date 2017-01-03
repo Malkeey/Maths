@@ -10,12 +10,18 @@ package Geometry;
 
 public class Cube extends Shape3D {
 
-    private float sideLength;
+    private final float sideLength;
     
     public Cube(float sideLength) {
         this.sideLength = sideLength;
         this.surfaceArea = (float) (6 * Math.pow(sideLength, 2));
         this.volume = (float) (Math.pow(sideLength, 3));
+    }
+    
+    //Getters
+    
+    public float getSideLength() {
+        return sideLength();
     }
 
 }

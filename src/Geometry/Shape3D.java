@@ -8,9 +8,9 @@ package Geometry;
 
 import java.text.DecimalFormat;
 
-public class Shape3D {
+public abstract class Shape3D {
 
-    protected float height, width, surfaceArea, volume;
+    protected float height, width, depth, surfaceArea, volume;
     
     //Constructors
     public Shape3D() {
@@ -31,6 +31,10 @@ public class Shape3D {
     
     public float getWidth() {
         return width;
+    }
+    
+    public float getDepth() {
+        return depth;
     }
     
     public float getSurfaceArea() {
