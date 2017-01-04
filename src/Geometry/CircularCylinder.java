@@ -28,16 +28,12 @@ public class CircularCylinder extends Shape3D {
     //Methods
     @Override
     public void calculateValues() {
-        
+        topSurfaceArea = (Math.PI * (Math.pow(radius, 2)));
+        bottomSurfaceArea = (Math.PI * (Math.pow(radius, 2)));
+        lateralSurfaceArea = (2 * Math.PI * radius * height);
+        totalSurfaceArea = (topSurfaceArea + bottomSurfaceArea + lateralSurfaceArea);
+        this.volume = (Math.PI * Math.pow(radius, 2) * height);
     }
-    
-//    Top Surface Area = π r^2
-//    Bottom Surface Area = π r^2
-//    Lateral Surface Area = 2 π r h
-//    Total Surface Area
-//    Volume = π r^2 h
-//    = L + T + B = 2πrh + 2(πr^2) = 2πr(h+r)
-    
     
     //Getters
     @Override
